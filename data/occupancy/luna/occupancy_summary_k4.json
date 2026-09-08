@@ -1,0 +1,60 @@
+{
+  "non-epilepsy": {
+    "n_rows": 99,
+    "occupancy_state_0_mean": 0.10618505128831486,
+    "occupancy_state_0_std": 0.1506261555231479,
+    "occupancy_state_1_mean": 0.39326212420264134,
+    "occupancy_state_1_std": 0.3375650545805675,
+    "occupancy_state_2_mean": 0.12331298404072825,
+    "occupancy_state_2_std": 0.22228718169777725,
+    "occupancy_state_3_mean": 0.37723984046831543,
+    "occupancy_state_3_std": 0.27480658616859255
+  },
+  "epilepsy": {
+    "n_rows": 99,
+    "occupancy_state_0_mean": 0.11916564130363647,
+    "occupancy_state_0_std": 0.13062191531914707,
+    "occupancy_state_1_mean": 0.2744443202383223,
+    "occupancy_state_1_std": 0.23827145132913383,
+    "occupancy_state_2_mean": 0.16959060279230112,
+    "occupancy_state_2_std": 0.22764782646928156,
+    "occupancy_state_3_mean": 0.43679943566574003,
+    "occupancy_state_3_std": 0.24032669971210402
+  },
+  "pairwise_mannwhitney_occupancy": {
+    "non-epilepsy_vs_epilepsy": {
+      "occupancy_state_0": {
+        "statistic": 3943.0,
+        "pvalue": 0.016411119761999538,
+        "non-epilepsy_mean": 0.10618505128831486,
+        "epilepsy_mean": 0.11916564130363647,
+        "pvalue_fdr_corrected": 0.032822239523999076,
+        "significant_fdr": true
+      },
+      "occupancy_state_1": {
+        "statistic": 5613.5,
+        "pvalue": 0.07702231945518437,
+        "non-epilepsy_mean": 0.39326212420264134,
+        "epilepsy_mean": 0.2744443202383223,
+        "pvalue_fdr_corrected": 0.07702231945518437,
+        "significant_fdr": false
+      },
+      "occupancy_state_2": {
+        "statistic": 3844.5,
+        "pvalue": 0.007923259775948559,
+        "non-epilepsy_mean": 0.12331298404072825,
+        "epilepsy_mean": 0.16959060279230112,
+        "pvalue_fdr_corrected": 0.031693039103794236,
+        "significant_fdr": true
+      },
+      "occupancy_state_3": {
+        "statistic": 4169.0,
+        "pvalue": 0.06978949279559256,
+        "non-epilepsy_mean": 0.37723984046831543,
+        "epilepsy_mean": 0.43679943566574003,
+        "pvalue_fdr_corrected": 0.07702231945518437,
+        "significant_fdr": false
+      }
+    }
+  }
+}

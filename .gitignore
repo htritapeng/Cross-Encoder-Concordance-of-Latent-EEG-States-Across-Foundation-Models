@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*~
+
+# Office locks / temp
+~$*
+*.tmp
+
+# Large / local-only artifacts (keep out of GitHub)
+*.npy
+*.edf
+*.fif
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.hdf5
+data/pca_latents/
+TUEP_result/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/

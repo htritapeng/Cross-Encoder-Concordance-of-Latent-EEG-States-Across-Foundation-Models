@@ -1,0 +1,60 @@
+{
+  "non-epilepsy": {
+    "n_rows": 99,
+    "occupancy_state_0_mean": 0.18384655097726052,
+    "occupancy_state_0_std": 0.2617749946992756,
+    "occupancy_state_1_mean": 0.03826912387583756,
+    "occupancy_state_1_std": 0.11901003764822721,
+    "occupancy_state_2_mean": 0.3141911267483236,
+    "occupancy_state_2_std": 0.2868060336791334,
+    "occupancy_state_3_mean": 0.4636931983985783,
+    "occupancy_state_3_std": 0.2781043689523504
+  },
+  "epilepsy": {
+    "n_rows": 99,
+    "occupancy_state_0_mean": 0.11777432427262982,
+    "occupancy_state_0_std": 0.18698876827394567,
+    "occupancy_state_1_mean": 0.04584075634056719,
+    "occupancy_state_1_std": 0.11606940249109597,
+    "occupancy_state_2_mean": 0.3542327340304545,
+    "occupancy_state_2_std": 0.2485441298900692,
+    "occupancy_state_3_mean": 0.4821521853563485,
+    "occupancy_state_3_std": 0.23999585284564304
+  },
+  "pairwise_mannwhitney_occupancy": {
+    "non-epilepsy_vs_epilepsy": {
+      "occupancy_state_0": {
+        "statistic": 5236.5,
+        "pvalue": 0.39721387850222245,
+        "non-epilepsy_mean": 0.18384655097726052,
+        "epilepsy_mean": 0.11777432427262982,
+        "pvalue_fdr_corrected": 0.5141635955208734,
+        "significant_fdr": false
+      },
+      "occupancy_state_1": {
+        "statistic": 4060.5,
+        "pvalue": 0.03281678788789837,
+        "non-epilepsy_mean": 0.03826912387583756,
+        "epilepsy_mean": 0.04584075634056719,
+        "pvalue_fdr_corrected": 0.1312671515515935,
+        "significant_fdr": false
+      },
+      "occupancy_state_2": {
+        "statistic": 4322.0,
+        "pvalue": 0.15150398437172932,
+        "non-epilepsy_mean": 0.3141911267483236,
+        "epilepsy_mean": 0.3542327340304545,
+        "pvalue_fdr_corrected": 0.30300796874345864,
+        "significant_fdr": false
+      },
+      "occupancy_state_3": {
+        "statistic": 4637.0,
+        "pvalue": 0.5141635955208734,
+        "non-epilepsy_mean": 0.4636931983985783,
+        "epilepsy_mean": 0.4821521853563485,
+        "pvalue_fdr_corrected": 0.5141635955208734,
+        "significant_fdr": false
+      }
+    }
+  }
+}

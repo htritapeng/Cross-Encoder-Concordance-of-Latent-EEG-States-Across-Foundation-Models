@@ -1,0 +1,48 @@
+{
+  "non-epilepsy": {
+    "n_rows": 99,
+    "occupancy_state_0_mean": 0.24348030340095864,
+    "occupancy_state_0_std": 0.2623341426538625,
+    "occupancy_state_1_mean": 0.629751765132137,
+    "occupancy_state_1_std": 0.3399219015258441,
+    "occupancy_state_2_mean": 0.1267679314669043,
+    "occupancy_state_2_std": 0.22869220048690092
+  },
+  "epilepsy": {
+    "n_rows": 99,
+    "occupancy_state_0_mean": 0.2855242224976421,
+    "occupancy_state_0_std": 0.20262479074769554,
+    "occupancy_state_1_mean": 0.5419571035720153,
+    "occupancy_state_1_std": 0.29912552834086736,
+    "occupancy_state_2_mean": 0.17251867393034262,
+    "occupancy_state_2_std": 0.23142512154891282
+  },
+  "pairwise_mannwhitney_occupancy": {
+    "non-epilepsy_vs_epilepsy": {
+      "occupancy_state_0": {
+        "statistic": 3965.0,
+        "pvalue": 0.020240467848167853,
+        "non-epilepsy_mean": 0.24348030340095864,
+        "epilepsy_mean": 0.2855242224976421,
+        "pvalue_fdr_corrected": 0.03036070177225178,
+        "significant_fdr": true
+      },
+      "occupancy_state_1": {
+        "statistic": 5767.0,
+        "pvalue": 0.03161900009390683,
+        "non-epilepsy_mean": 0.629751765132137,
+        "epilepsy_mean": 0.5419571035720153,
+        "pvalue_fdr_corrected": 0.03161900009390683,
+        "significant_fdr": true
+      },
+      "occupancy_state_2": {
+        "statistic": 3819.0,
+        "pvalue": 0.006499486585407813,
+        "non-epilepsy_mean": 0.1267679314669043,
+        "epilepsy_mean": 0.17251867393034262,
+        "pvalue_fdr_corrected": 0.01949845975622344,
+        "significant_fdr": true
+      }
+    }
+  }
+}
