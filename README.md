@@ -19,7 +19,7 @@ This repository contains a **minimal, reproducible package** for the paper’s p
 
 ```text
 .
-├── README.md                 ← you are here
+├── README.md                
 ├── requirements.txt
 ├── .gitignore
 ├── code/                     ← analysis utilities
