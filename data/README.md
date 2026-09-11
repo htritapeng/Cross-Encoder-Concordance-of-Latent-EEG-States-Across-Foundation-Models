@@ -1,8 +1,8 @@
 # Input data layout
 
-## What is included now (demo-ready)
+## What is included (demo-ready)
 
-Precomputed **subject-level occupancy** summaries used by the paper's primary concordance analysis:
+Precomputed **subject-level occupancy** used by the paper's primary concordance analysis:
 
 ```text
 data/input/occupancy/
@@ -29,9 +29,9 @@ Each `occupancy_summary_k{K}.json` contains:
 ```json
 {
   "non-epilepsy": {
-    "n_rows": ...,
-    "occupancy_state_0_mean": ...,
-    "occupancy_state_0_std": ...,
+    "n_rows": "...",
+    "occupancy_state_0_mean": "...",
+    "occupancy_state_0_std": "...",
     "...": "..."
   },
   "epilepsy": { "...": "..." },
@@ -54,28 +54,7 @@ Each `occupancy_k{K}.csv` has columns like:
 | `k` | number of states |
 | `occupancy_state_0` ... `occupancy_state_{k-1}` | subject occupancy |
 
----
-
-## Placeholders for full pipeline (upload later)
-
-```text
-data/input/embeddings/
-  luna/     # optional: segment/window embeddings (.npy), one file per subject
-  our/      # optional: segment/window embeddings (.npy), one file per subject
-
-data/input/labels/
-  subject_groups.csv   # optional: subject_id, group
-```
-
-### Suggested embedding file naming
-
-```text
-data/input/embeddings/luna/<subject_id>.npy   # shape (n_windows, dim)
-data/input/embeddings/our/<subject_id>.npy    # shape (n_windows, dim)
-```
-
-Same `subject_id` and aligned window order are required for label-independent
-co-assignment analysis.
+Group labels are already in these CSVs (no separate `labels/` folder).
 
 ### Raw TUEP EEG
 

@@ -32,13 +32,9 @@ This repository contains a **minimal, reproducible package** for the paper’s p
 ├── data/
 │   ├── README.md             ← input data format details
 │   └── input/
-│       ├── occupancy/        ← demo-ready occupancy exports (included)
-│       │   ├── luna/
-│       │   └── our/
-│       ├── embeddings/       ← optional window embeddings (empty for now)
-│       │   ├── luna/
-│       │   └── our/
-│       └── labels/           ← optional subject labels (empty for now)
+│       └── occupancy/        ← demo-ready occupancy exports (included)
+│           ├── luna/
+│           └── our/
 └── outputs/                  ← generated outputs (gitignored)
 ```
 
@@ -52,7 +48,6 @@ This repository contains a **minimal, reproducible package** for the paper’s p
 | Frozen LUNA weights | No (later) | `models/luna/` |
 | Frozen OUR weights | No (later) | `models/our/` |
 | Raw TUEP EEG | No (not redistributed) | Obtain from TUH / TUEP |
-| Window embeddings | No (for advanced analyses) | `data/input/embeddings/` |
 
 ---
 

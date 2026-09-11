@@ -11,13 +11,11 @@ Thumbs.db
 *~
 ~$*
 
-# Large model / embedding artifacts (upload separately if needed)
+# Large model artifacts (upload separately if needed)
 models/luna/*
 !models/luna/README.md
 models/our/*
 !models/our/README.md
-data/input/embeddings/**/*.npy
-data/input/embeddings/**/*.pt
 *.ckpt
 *.pt
 *.pth
@@ -25,6 +23,7 @@ data/input/embeddings/**/*.pt
 *.h5
 *.edf
 *.fif
+*.npy
 
 outputs/*
 !outputs/.gitkeep
