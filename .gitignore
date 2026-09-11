@@ -1,34 +1,30 @@
-# Python
 __pycache__/
 *.py[cod]
-*.egg-info/
 .venv/
 venv/
 .env
 .env.*
-
-# OS / editors
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
 *~
-
-# Office locks / temp
 ~$*
-*.tmp
 
-# Large / local-only artifacts (keep out of GitHub)
-*.npy
-*.edf
-*.fif
+# Large model / embedding artifacts (upload separately if needed)
+models/luna/*
+!models/luna/README.md
+models/our/*
+!models/our/README.md
+data/input/embeddings/**/*.npy
+data/input/embeddings/**/*.pt
 *.ckpt
 *.pt
 *.pth
+*.bin
 *.h5
-*.hdf5
-data/pca_latents/
-TUEP_result/
+*.edf
+*.fif
 
-# Notebooks checkpoints
-.ipynb_checkpoints/
+outputs/*
+!outputs/.gitkeep
