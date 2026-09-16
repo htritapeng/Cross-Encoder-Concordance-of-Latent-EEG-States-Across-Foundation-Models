@@ -47,7 +47,7 @@ This repository contains a **minimal, reproducible package** for the paper’s p
 | Occupancy summaries (`k=3,4,5`) | **Yes** (included) | `data/input/occupancy/` |
 | Frozen LUNA weights | No (later) | `models/luna/` |
 | Frozen OUR weights | No (later) | `models/our/` |
-| Raw TUEP EEG | No (not redistributed) | Obtain from TUH / TUEP |
+| Raw TUEP EEG |Obtain from TUH / TUEP |
 
 ---
 
